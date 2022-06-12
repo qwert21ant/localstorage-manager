@@ -211,13 +211,13 @@ $('#add').click(function(e) {
     var key;
     var value;
 
-    key = prompt('Key:');
+    key = $("#key_add").val();
 
     if (key === null) {
         return;
     }
 
-    value = prompt('Value:');
+    value = $("#value_add").val();
 
     if (value === null) {
         return;
@@ -250,7 +250,7 @@ $('#clear').click(function(e) {
 $('#import').click(function(e) {
     e.preventDefault();
 
-    var json = prompt((type === 'L' ? 'Local' : 'Session') + ' storage data (JSON):');
+    var json = $("#json_imp").val();
 
     if (json) {
         executeScript({ type: type, what: 'import', json: json }, function() {

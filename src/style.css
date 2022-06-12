@@ -212,3 +212,52 @@ p.error {
 .key {
     color: #0000FF
 }
+
+
+
+#x{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#x button {
+    margin-top: 10px;
+}
+
+#x>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.inp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#x button {
+    width: 60%;
+    align-self: center;
+}
+
+.inp>div {
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#x input {
+    border: 1px solid gray;
+    border-radius: 8px;
+    height: 30px;
+}
